@@ -9,7 +9,7 @@ export default function Card() {
 
     return (
         
-        <div  class = "w-full flex min-h-screen mt-0 justify-center ms:flex-colomn">
+        <div  class = "w-full flex min-h-screen mt-0 justify-center ms:flex-column">
             <div class="lg: px-6 py-6">
             <img class = " max-w-lg soverflow-hidden rounded-lg shadow-lg" src="https://img3.goodfon.ru/original/3000x2000/d/ab/myaso-ovoschi-buzhenina.jpg" alt="Sunset in the mountains"/>
             </div>
