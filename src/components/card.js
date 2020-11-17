@@ -9,16 +9,16 @@ export default function Card() {
 
     return (
         
-        <div  class = "w-full flex min-h-screen mt-0 justify-center ms:flex-column">
+        <div  class = "flex-col md:flex-row flex min-h-screen mt-0 justify-center align-center">
             <div class="lg: px-6 py-6">
-            <img class = " max-w-lg soverflow-hidden rounded-lg shadow-lg" src="https://img3.goodfon.ru/original/3000x2000/d/ab/myaso-ovoschi-buzhenina.jpg" alt="Sunset in the mountains"/>
+            <img class = "max-w-lg soverflow-hidden rounded-lg shadow-lg" src="https://img3.goodfon.ru/original/3000x2000/d/ab/myaso-ovoschi-buzhenina.jpg" alt="Sunset in the mountains"/>
             </div>
             
-            <div class="lg: px-6 py-4">
-                <div class="font-bold text-xl text-left font-extrabold text-3xl">
-                    <table>
+            <div class=" md: px-6 py-4">
+                <div class="font-bold text-xl text-left font-extrabold text-3xl flex-row">
+                    <table class="w-full">
                         <tr>
-                       <th>Мясо с овощами</th> 
+                       <th>Мясо с овощами</th>
                        <th class = "text-base text-right pl-12 m-0">
                             ₽ 141
                         </th> 
@@ -32,7 +32,7 @@ export default function Card() {
                             </p>
                             </th>
                            <th>
-                        <div class="flex mb-4 items-right ms:overflow-x-scroll">
+                        <div class="flex mb-4 items-right overflow-x-scroll md:overflow-x-auto">
                         <button class="text-xs p-2 ml-4 mr-2 border-2 text-grey ">Убрать лук</button>
                         <button class="text-xs p-2 ml-2 border-2 ">Без майонеза</button>
                         <button class="text-xs p-2 ml-2 border-2 bg-black border-black text-white">Острее</button>
@@ -52,7 +52,7 @@ export default function Card() {
                 <p class="p-3 text-white bg-black text-left font-thin">
                 425 gr
                 </p>
-                <p class="p-3 text-white bg-black text-left ms:fixed bottom-0">
+                <p class="fixed bottom-0 p-3 text-white bg-black text-left md:static ">
                 <div>
                 <button onClick={() =>  setCount(()=> count!==1 ? count - 1 : 1) } type="button" class="border w-50 border-white-500 bg-white text-black rounded-md px-4 py-2 mr-2 transition duration-500 ease select-none hover:bg-white-600 focus:outline-none focus:shadow-outline" >
                 -
