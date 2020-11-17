@@ -11,7 +11,7 @@ export default function Card() {
         
         <div  class = "flex-col md:flex-row flex min-h-screen mt-0 justify-center align-center">
             <div class="lg: px-6 py-6">
-            <img class = "max-w-lg soverflow-hidden rounded-lg shadow-lg" src="https://img3.goodfon.ru/original/3000x2000/d/ab/myaso-ovoschi-buzhenina.jpg" alt="Sunset in the mountains"/>
+            <img class = "min-w-lg  soverflow-hidden rounded-lg shadow-lg md:max-w-lg" src="https://img3.goodfon.ru/original/3000x2000/d/ab/myaso-ovoschi-buzhenina.jpg" alt="Sunset in the mountains"/>
             </div>
             
             <div class=" md: px-6 py-4">
@@ -53,7 +53,7 @@ export default function Card() {
                 425 gr
                 </p>
                 <p class="fixed bottom-0 p-3 text-white bg-black text-left md:static ">
-                <div>
+                
                 <button onClick={() =>  setCount(()=> count!==1 ? count - 1 : 1) } type="button" class="border w-50 border-white-500 bg-white text-black rounded-md px-4 py-2 mr-2 transition duration-500 ease select-none hover:bg-white-600 focus:outline-none focus:shadow-outline" >
                 -
                 </button>
@@ -65,7 +65,7 @@ export default function Card() {
                 <button type="button" class="border w-50 border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline" >
                 Добавить в корзину
                 </button>
-
+                <div>
                 </div>
                 </p>
                 </div>
