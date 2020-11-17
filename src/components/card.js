@@ -9,9 +9,9 @@ export default function Card() {
 
     return (
         
-        <div  class = "md:w-20 lg:w-full flex min-h-screen mt-0">
-            <div class="">
-            <img class = "border-4 border-red-500 max-w-lg round-xl" src="https://img3.goodfon.ru/original/3000x2000/d/ab/myaso-ovoschi-buzhenina.jpg" alt="Sunset in the mountains"/>
+        <div  class = "w-full flex min-h-screen mt-0 justify-center ms:flex-colomn">
+            <div class="lg: px-6 py-6">
+            <img class = " max-w-lg soverflow-hidden rounded-lg shadow-lg" src="https://img3.goodfon.ru/original/3000x2000/d/ab/myaso-ovoschi-buzhenina.jpg" alt="Sunset in the mountains"/>
             </div>
             
             <div class="lg: px-6 py-4">
@@ -32,7 +32,7 @@ export default function Card() {
                             </p>
                             </th>
                            <th>
-                        <div class="flex mb-4 items-right overflow-x-scroll">
+                        <div class="flex mb-4 items-right ms:overflow-x-scroll">
                         <button class="text-xs p-2 ml-4 mr-2 border-2 text-grey ">Убрать лук</button>
                         <button class="text-xs p-2 ml-2 border-2 ">Без майонеза</button>
                         <button class="text-xs p-2 ml-2 border-2 bg-black border-black text-white">Острее</button>
@@ -52,7 +52,7 @@ export default function Card() {
                 <p class="p-3 text-white bg-black text-left font-thin">
                 425 gr
                 </p>
-                <p class="p-3 text-white bg-black text-left ">
+                <p class="p-3 text-white bg-black text-left ms:fixed bottom-0">
                 <div>
                 <button onClick={() =>  setCount(()=> count!==1 ? count - 1 : 1) } type="button" class="border w-50 border-white-500 bg-white text-black rounded-md px-4 py-2 mr-2 transition duration-500 ease select-none hover:bg-white-600 focus:outline-none focus:shadow-outline" >
                 -
